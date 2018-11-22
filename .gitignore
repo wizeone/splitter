@@ -11,3 +11,20 @@ pubspec.lock
 # Directory created by dartdoc
 # If you don't generate documentation locally you can remove this line.
 doc/api/
+
+# Android Studio
+*.iml
+.idea
+.gradle
+build/
+.navigation
+captures/
+output.json
+
+# From Flutter create
+.DS_Store
+.atom/
+ios/.generated/
+packages
+pubspec.lock
+.flutter-plugins
