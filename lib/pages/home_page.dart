@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'even_split_page.dart';
+import 'split_by_person_page.dart';
+import '../ui/option_button.dart';
+
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
 
@@ -10,6 +14,29 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+  void _routeToDivideEvenlyPage() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) =>
+                EventSplitPage(key: widget.key)
+        )
+    );
+    return;
+  }
+
+  void _routeToSplitByPersonPage() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) =>
+                SplitByPersonPage(key: widget.key)
+        )
+    );
+    return;
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -24,27 +51,18 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: new Center(
-        child: new Column(
-          children: <Widget>[
-            new Text(
-              'Temp Text',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.normal,
-                fontFamily: 'Source Sans Pro',
-                fontSize: 40.0,
-              ),
-            ),
-          ],
+        child: new Container(
+          width: 300.0,
+          height: 300.0,
+          child: new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new OptionButton('Even Split', _routeToDivideEvenlyPage),
+              new Spacer(),
+              new OptionButton('Split By Person', _routeToSplitByPersonPage),
+            ],
+          ),
         ),
-      ),
-      bottomNavigationBar: BottomAppBar(
-        child: Container(height: 50.0),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        tooltip: 'New check',
-        child: Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
