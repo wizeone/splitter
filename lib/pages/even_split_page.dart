@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../ui/input_row.dart';
+
 class EventSplitPage extends StatefulWidget {
   EventSplitPage({Key key}) : super(key: key);
 
@@ -23,10 +25,12 @@ class _EventSplitPage extends State<EventSplitPage> {
           ),
         ],
       ),
-      body: new Center(
-        child:  new Column(
+      body: new Container(
+        padding: const EdgeInsets.all(30.0),
+        child: new Column(
           children: <Widget>[
-            new Text('Even Split'),
+            new InputRow('Cost of items', '\$0.00'),
+            new InputRow('Tax', '\$0.00'),
           ],
         ),
       ),
@@ -35,8 +39,8 @@ class _EventSplitPage extends State<EventSplitPage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        tooltip: 'New check',
-        child: Icon(Icons.add),
+        tooltip: 'Calculate',
+        child: Icon(Icons.check),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );

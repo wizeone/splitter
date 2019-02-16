@@ -11,10 +11,7 @@ class Splitter extends StatelessWidget {
     return new MaterialApp(
       title: 'Splitter',
       theme: new ThemeData(
-        accentColor: Colors.cyanAccent,
-        brightness: Brightness.dark,
         fontFamily: 'Roboto',
-        primarySwatch: Colors.cyan,
       ),
       home: new HomePage(title: 'Splitter'),
     );

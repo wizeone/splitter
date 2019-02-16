@@ -23,7 +23,6 @@ class _HomePageState extends State<HomePage> {
                 EventSplitPage(key: widget.key)
         )
     );
-    return;
   }
 
   void _routeToSplitByPersonPage() {
@@ -34,7 +33,6 @@ class _HomePageState extends State<HomePage> {
                 SplitByPersonPage(key: widget.key)
         )
     );
-    return;
   }
 
   @override

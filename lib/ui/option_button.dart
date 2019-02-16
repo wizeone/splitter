@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class OptionButton extends StatelessWidget {
-  String text;
-  VoidCallback onPress;
+  final String text;
+  final VoidCallback onPress;
 
   OptionButton(this.text, this.onPress);
 

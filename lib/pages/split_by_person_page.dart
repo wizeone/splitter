@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class SplitByPersonPage extends StatefulWidget {
   SplitByPersonPage({Key key}) : super(key: key);
 
-  final String title = "Even Split";
+  final String title = "Split by person";
 
   @override
   _SplitByPersonPage createState() => new _SplitByPersonPage();
