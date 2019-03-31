@@ -31,6 +31,11 @@ class _EventSplitPage extends State<EventSplitPage> {
           children: <Widget>[
             new InputRow('Cost of items', '\$0.00'),
             new InputRow('Tax', '\$0.00'),
+            new InputRow('Tip %', '18%'),
+            new RaisedButton(
+              onPressed: () {},
+              child: new Text('Calculate'),
+            ),
           ],
         ),
       ),

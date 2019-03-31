@@ -38,8 +38,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(widget.title),
+      appBar: AppBar(
+        title: Text(widget.title),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.menu),
@@ -48,16 +48,16 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: new Center(
-        child: new Container(
+      body: Center(
+        child: Container(
           width: 300.0,
           height: 300.0,
-          child: new Column(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              new OptionButton('Even Split', _routeToDivideEvenlyPage),
-              new Spacer(),
-              new OptionButton('Split By Person', _routeToSplitByPersonPage),
+              OptionButton('Even Split', _routeToDivideEvenlyPage),
+              Spacer(),
+              OptionButton('Split By Person', _routeToSplitByPersonPage),
             ],
           ),
         ),

@@ -8,11 +8,11 @@ class OptionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Container(
-      child: new RaisedButton(
-        child: new Text(
+    return Container(
+      child: RaisedButton(
+        child: Text(
           text,
-          style: new TextStyle(
+          style: TextStyle(
             fontSize: 24.0,
             fontFamily: 'Roboto',
           ),

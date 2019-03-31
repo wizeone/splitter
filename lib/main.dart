@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 
 import 'pages/home_page.dart';
 
-void main() => runApp(new Splitter());
+void main() => runApp(Splitter());
 
 class Splitter extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'Splitter',
-      theme: new ThemeData(
+      theme: ThemeData(
         fontFamily: 'Roboto',
       ),
-      home: new HomePage(title: 'Splitter'),
+      home: HomePage(title: 'Splitter'),
     );
   }
 }

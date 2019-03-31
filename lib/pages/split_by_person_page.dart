@@ -12,9 +12,9 @@ class SplitByPersonPage extends StatefulWidget {
 class _SplitByPersonPage extends State<SplitByPersonPage> {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(widget.title),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.menu),
@@ -23,7 +23,7 @@ class _SplitByPersonPage extends State<SplitByPersonPage> {
           ),
         ],
       ),
-      body: new Center(
+      body: Center(
         child:  ListView(
           shrinkWrap: true,
           padding: EdgeInsets.all(8.0),
